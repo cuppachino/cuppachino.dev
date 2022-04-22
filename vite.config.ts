@@ -5,6 +5,7 @@ import * as path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // base: '/cuppachino.dev/',
   plugins: [react()],
   resolve: {
     alias: {
