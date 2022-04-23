@@ -59,12 +59,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full h-fit flex flex-col space-y-5'>
-      <div className={`w-full text-3xl font-bold ${style[theme].text.active}`}>
+    <div className='w-full h-fit flex flex-col gap-5 mx-auto sm:inline-flex sm:flex-row sm:justify-between items-center '>
+      <div className={`w-full text-3xl font-bold  ${style[theme].text.active}`}>
         cuppachino
       </div>
-      <div className='w-full flex justify-between items-center '>
-        <div className='w-full flex items-center space-x-2  relative'>
+      <div className='w-full inline-flex items-center justify-between sm:justify-end gap-8'>
+        <div className='w-fit  inline-flex items-center gap-2 relative'>
           <Link route='.info' />
           <Link route='.blog' />
           <Link route='.contact' />

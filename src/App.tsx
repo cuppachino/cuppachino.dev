@@ -31,9 +31,9 @@ function App() {
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <RouteContext.Provider value={{ route, setRoute }}>
         <div
-          className={`${style[theme].bg} ${style[theme].text.active} transition-all duration-300 text-white w-screen h-screen p-7 space-y-4 font-mont`}>
+          className={`${style[theme].bg} ${style[theme].text.active} transition-all duration-300 text-white absolute inset-0 p-7 flex flex-col gap-4 font-mont divide-y divide-gray-600`}>
           <Navbar />
-          <div className='w-full h-[1px] bg-white/25' />
+          {/* <div className='w-full h-[1px] bg-white/25' /> */}
           {/* <p className={`${style[theme].text.active} `}>{route}</p> */}
           <Page />
         </div>
