@@ -5,6 +5,9 @@ module.exports = {
       fontFamily: {
         mont: ['Montserrat'],
       },
+      colors: {
+        'cuppa-gray-900': '#090909',
+      },
     },
   },
   plugins: [],

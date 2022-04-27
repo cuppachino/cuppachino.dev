@@ -3,3 +3,39 @@
 @tailwind utilities;
 
 /* font-family: 'Heebo', sans-serif; */
+
+html {
+  @apply antialiased;
+}
+
+body {
+  @apply bg-cuppa-gray-900;
+}
+
+.blurry-gradient {
+  position: fixed;
+  top: -1000px;
+  right: -800px;
+  width: 2000px;
+  height: 2000px;
+  opacity: 0.5;
+}
+
+.radial {
+  filter: blur(340px);
+  opacity: 0.75;
+}
+
+/* > Page Content
+  sm  640px
+  md  768px
+  lg  1024px
+  xl  1280px
+  2xl 1536px
+*/
+
+.page {
+  @apply w-full mx-auto
+  border-white/[0.15]
+  /* md:border-x */;
+}
